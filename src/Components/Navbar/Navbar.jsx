@@ -1,21 +1,6 @@
 import './Navbar.css';
 import { FaUser, FaCartArrowDown, FaTruck } from "react-icons/fa";
 
-function ItemList() {
-
-    const items = ['Home', 'About', 'Services', 'Contact'];
-
-    return (
-        <ul className="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
-        {items.map((item) => (
-        <li className="nav-item  ms-lg-4 menu-links">
-            <a className="nav-link active" aria-current="page" href="#">{item}</a>
-        </li>
-        ))}
-    </ul>
-    );
-}
-
 function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light">
@@ -33,7 +18,22 @@ function Navbar() {
                 </button>
                 
                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
-                <div className="mx-auto"><ItemList /></div>
+                <div className="mx-auto">
+                <ul className="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
+                <li className="nav-item  ms-lg-4 menu-links">
+            <a className="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li className="nav-item  ms-lg-4 menu-links">
+            <a className="nav-link active" aria-current="page" href="#">About</a>
+        </li>
+        <li className="nav-item  ms-lg-4 menu-links">
+            <a className="nav-link active" aria-current="page" href="#">Services</a>
+        </li>
+        <li className="nav-item  ms-lg-4 menu-links">
+            <a className="nav-link active" aria-current="page" href="#">Contact</a>
+        </li>
+                </ul>
+                </div>
                     
                     <div className="navbar icons">
                         <li className="nav-item">
