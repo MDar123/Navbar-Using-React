@@ -1,0 +1,18 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.icons{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.navbar{
+    background-color: #E4B1F0;
+}
+.menu-links:hover{
+    border-bottom: 1px solid white;
+}
